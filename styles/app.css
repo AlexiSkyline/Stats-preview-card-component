@@ -10,13 +10,177 @@
     /* Neutral */
     --White: hsl( 0, 0%, 100% );
     --Slightly-transparent-white: hsla( 0, 0%, 100%, 0.75 );
-    --Slightly-transparent-white: hsla( 0, 0%, 100%, 0.6 );
+    --Slightly-transparent-white-stat: hsla( 0, 0%, 100%, 0.6 );
 }
 body {
+    background-color: var( --Very-dark-blue );
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+img {
+    max-width: 100%;
+}
+/* Todo: Card Section */
+.card {
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    margin: 0 auto;
+    height: 600px;
+    width: 1000px;
+}
+.card__text {
+    flex: 45%;
+    align-items: center;
     background-color: var( --Dark-desaturated-blue );
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: var( --White );
+    height: 400px;
+    padding: 0 30px 0 60px;
+}
+.card__text--title {
+    margin: 0;
+    padding-top: 60px;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    width: 350px;
+}
+.card__text--title span {
+    color: var( --Soft-violet );
+}
+.card__text--paragraph {
+    margin: 0;
+    color: var( --Slightly-transparent-white-stat );
+    font-family: 'Inter', sans-serif;
+    padding-top: 25px;
+    font-size: 13px;
+    line-height: 25px;
+    width: 300px;
+}
+.card__text--stat {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    width: 320px;
+}
+.card__text--stat {
+    margin: 0;
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+.card__text--stat span {
+    color: var( --Slightly-transparent-white-stat );
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.card__text--stat p {
+    margin: 0;
+}
+.card__img {
+    flex: 55%;
+    background-color: var( --Soft-violet );
+    background-image:url( /images/image-header-desktop.jpg );
+    background-blend-mode: multiply;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 400px;
+    width: 400px;
+}
+.attribution { 
+    font-family: 'Lexend Deca', sans-serif;
+    color: var( --White );
+    font-size: 11px; text-align: center;
+    font-size: 15px;
+    font-weight: 400; 
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media ( max-width: 1000px ) {
+    .card{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column-reverse;
+        width: 400px;
+        height: 1000px;
+    }
+    .card__img {
+        flex: 10%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 0;
+    }
+    .card__text {
+        width: 100%;
+        padding: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .card__text--title {
+        margin: 0 auto;
+        width: 80%;
+        text-align: center;
+    }
+    .card__text--paragraph {
+        font-size: 18px;
+        margin: 0 auto;
+        width: 80%;
+        text-align: center;
+    }
+    .card__text--stat {
+        margin: 0 auto;
+        flex-direction: column;
+        text-align: center;
+    }
+    .card__text--stat p {
+        margin-top: 40px;
+    }
+    .card__text--stat p:first-child {
+        margin: 0;
+    }
+    .attribution {
+        margin-top: 40px;
+    }
+    .card__text--stat {
+        font-size: 25px;
+    }
 }
 
-
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+@media ( max-width: 440px ) {
+    .card {
+        width: 320px;
+        height: 850px;
+    }
+    .card__text--title {
+        font-size: 25px;
+        padding-top: 40px;
+    }
+    .card__text--paragraph {
+        font-size: 14px;
+        width: 75%;
+    }
+    .card__img {
+        flex: 3%;
+        width: 320px;
+        background-size: 100%;
+    }
+    .card__text--stat p {
+        margin-top: 35px;
+    }
+    .attribution {
+        margin-top: 40px;
+    }
+    .card__text--stat {
+        font-size: 20px;
+    }
+}
