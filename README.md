@@ -1,5 +1,7 @@
 # Frontend Mentor - Stats preview card component
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1adfeb30-0fde-4835-bafc-a5124071ec6c/deploy-status)](https://reverent-darwin-c457cb.netlify.app/)
+
 ![Design preview for the Stats preview card component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
@@ -89,5 +91,3 @@ We love receiving feedback! We're always looking to improve our challenges and o
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
 **Have fun building!** 🚀
-
-[link netlify](https://reverent-darwin-c457cb.netlify.app/).
