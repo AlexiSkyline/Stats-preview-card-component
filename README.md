@@ -1,6 +1,6 @@
 # Frontend Mentor - Stats preview card component
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/1adfeb30-0fde-4835-bafc-a5124071ec6c/deploy-status)](https://reverent-darwin-c457cb.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1adfeb30-0fde-4835-bafc-a5124071ec6c/deploy-status)](https://stats-preview-card-component-by-skyline.netlify.app/)
 
 ![Design preview for the Stats preview card component coding challenge](./design/desktop-preview.jpg)
 
